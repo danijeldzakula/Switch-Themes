@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Title -->
+	<title>About Me</title>
+	<!-- Meta data -->
+	<meta charset="utf-8"/>
+	<meta content="True" name="HandheldFriendly">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=EDGE"/>
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<meta name="description" content="Default description"/>
+	<meta name="keywords" content="Default keywords"/>	
+	<!-- Style -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+  	<link rel="stylesheet" type="text/css" href="./css/dark.css" id="dark-reader" disabled="">	
+  	<script type="text/javascript">
+		function dark_toggle() {
+		    var el1 = document.getElementById("dark-reader");
+		    var icon = document.getElementById("dark-reader-icon");
+		    if (el1.disabled) {
+		        el1.disabled = false;
+		        icon.setAttribute("class", "fas fa-sun fa-pulse");
+		        localStorage.setItem("darkreader", "enabled");
+		    } else {
+		        el1.disabled = true;
+		        icon.setAttribute("class", "fas fa-moon fa-pulse");
+		        localStorage.setItem("darkreader", "disabled");
+		    }
+		}	  		
+  	</script>
+</head>
+<body>
+
+
+
+	
+	<a 	class="tray-icon" 
+		href="javascript:void(0)" 
+		onclick="dark_toggle(); return false;" 
+		title="Toggle night mode">
+		
+		<i id="dark-reader-icon" class="fas fa-moon fa-pulse" style="color: rgb(109, 146, 190); animation-iteration-count: 1;"></i>			
+	</a>
+
+
+
+</body>
+</html>
